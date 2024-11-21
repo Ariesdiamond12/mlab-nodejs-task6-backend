@@ -5,11 +5,11 @@ const cors = require("cors");
 const app = express();
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // Update with your frontend's URL if different
+  origin: "https://mlab-nodejs-task8-server.onrender.com", // Update with your frontend's URL if different
   methods: "GET,POST,PUT,DELETE", // Allowed methods
   allowedHeaders: "Content-Type,Authorization", // Allowed headers
 };
